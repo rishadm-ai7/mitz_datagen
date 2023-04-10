@@ -1,0 +1,98 @@
+packaging_tutorial/
+├── LICENSE
+├── pyproject.toml
+├── README.md
+├── setup.cfg
+├── src/
+│   └── example_package/
+│       ├── __init__.py
+│       └── example.py
+└── tests/
+
+
+touch LICENSE
+touch pyproject.toml
+touch setup.cfg
+mkdir src/mypackage
+touch src/mypackage/__init__.py
+touch src/mypackage/main.py
+mkdir tests
+
+
+
+
+
+>>>>paste this into pyproject.toml
+
+
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+
+
+
+>>>for setup.cfg file 
+
+
+
+[metadata]
+name = example-pkg-YOUR-USERNAME-HERE
+version = 0.0.1
+author = Example Author
+author_email = author@example.com
+description = A small example package
+long_description = file: README.md
+long_description_content_type = text/markdown
+url = https://github.com/pypa/sampleproject
+project_urls =
+    Bug Tracker = https://github.com/pypa/sampleproject/issues
+classifiers =
+    Programming Language :: Python :: 3
+    License :: OSI Approved :: MIT License
+    Operating System :: OS Independent
+
+[options]
+package_dir =
+    = src
+packages = find:
+python_requires = >=3.6
+
+[options.packages.find]
+where = src
+
+
+
+>>>>Now we check for build in terminal 
+
+python3 -m pip install --upgrade build
+
+python3 -m build
+
+
+
+>>>> Now install twine
+
+python3 -m pip install --upgrade twine
+
+python3 -m twine upload --repository testpypi dist/*
+
+THE FOLDER INSIDE SRC IS WHAT THE PACKAGE IS CALLED ON.
+	
+eg 
+
+after pip installing the package
+
+from mitz_datagen import datagen
+
+
+
+
+
+
+
+

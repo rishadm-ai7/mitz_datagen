@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/mitz_datagen/__init__.py
+src/mitz_datagen/datagen.py
+src/mitz_datagen.egg-info/PKG-INFO
+src/mitz_datagen.egg-info/SOURCES.txt
+src/mitz_datagen.egg-info/dependency_links.txt
+src/mitz_datagen.egg-info/top_level.txt
