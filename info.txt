@@ -94,6 +94,8 @@ the prompt example :=>
 
 I need you to generate 5 tables in healthcare domain, 1 fact and 4 dimensions with 5 columns and 10 rows each which uses star schema.
 
+////
+
 
 
 
